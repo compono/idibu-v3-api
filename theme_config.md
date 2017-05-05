@@ -1,4 +1,4 @@
-Here is less file example:
+Here is a LESS file example showing detailed CSS style options:
 
 
 
