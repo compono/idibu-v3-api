@@ -1,8 +1,34 @@
 
 Here is a LESS file example showing detailed CSS style options:
 
+color.less file listing exmaple:
+```less
+@negative-color: #D11F38;
+@positive-color: #72BF44;
+@info-color: #727F85;
+@neutral-color: #0081B9;
+@line-color: #DEDEDE;
+@line-color-light: #f1efeb;
+@brand-color: #D30E7A;
+@logo-mobile: "/static/images/logo-idibu.png";
+@inactive-color: #E0E0E0;
+@default-text-color: #000;
+@happy-gray-dark: #4a4a4a;
+@orange: #eb8b38;
+@black: #000;
+@neutral-color: #2b82bc;
+@negative-color:#b65166;
+@info-color:#888888;
+@inactive-color:#DDDDDD;
+@line-color:#efefef;
+.bg-mixin() {
+  background: #F5F5F5;
+}
+
+```
 
 
+theme_confing.less file listing exmaple:
 ```less
 
 @crm-body-box-shadow : 2px 0px 5px -2px #bbb;
