@@ -1,7 +1,7 @@
 
 Here is a LESS file example showing detailed CSS style options:
 
-#color.less file example:
+color.less file example:
 ```less
 @negative-color: #D11F38;
 @positive-color: #72BF44;
@@ -28,7 +28,7 @@ Here is a LESS file example showing detailed CSS style options:
 ```
 
 
-#theme_confing.less file example:
+theme_confing.less file example:
 ```less
 
 @crm-body-box-shadow : 2px 0px 5px -2px #bbb;
