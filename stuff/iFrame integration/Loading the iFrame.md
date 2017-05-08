@@ -27,7 +27,9 @@ The following list are the variables that **must** be passed for the integration
 - “lname” = last name of the user
 
 Example required variables URL to test with:
->https://v3.idibu.com/c/integration/iframe/id/<ID/secret/<SECRET/vacancy/12345/title/Test%20Vacancy%20Using%20idibu%20iFrame/email/test@test.com/fname/John/lname/Doe
+```
+https://v3.idibu.com/c/integration/iframe/id/<ID/secret/<SECRET/vacancy/12345/title/Test%20Vacancy%20Using%20idibu%20iFrame/email/test@test.com/fname/John/lname/Doe
+```
 
 ### Recommended variables
 
@@ -63,7 +65,6 @@ The following list are remaining variables you can utilise to improve the user e
 - “duration” = Textual description of the duration of a contract position
 - “lpage” = Enable landing pages for this vacancy
 - “lpageid” = ID of the landing page to use with this vacancy
-
 
 
 
