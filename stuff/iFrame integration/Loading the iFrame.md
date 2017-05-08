@@ -36,8 +36,8 @@ The following list are the variables **we highly recommend** to provide the best
 - “group” = group to assign the new user to. We recommend always using a default group because you can apply permissions to this group for all new users to inherit
 
 Location of the vacancy sent using two variables (Longitude, Latitude):
-- “lat” = Latitude value
-- “lng = Longitutde” value TBC the format with tech team
+-  “lat” = Latitude value
+-  “lng = Longitutde” value TBC the format with tech team
 - “type” = Job type (see list for available values)
 - “sector” = send the idibu vacancy sector (see list for available values)
 - “starts” = vacancy start date - in yyyy-mm-dd format with leading zeroes (e.g. 2013-06-25)
