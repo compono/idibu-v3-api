@@ -38,7 +38,6 @@ The following list are the variables **we highly recommend** to provide the best
 Location of the vacancy sent using two variables (Longitude, Latitude):
 - “lat” = Latitude value
 - “lng = Longitutde” value TBC the format with tech team
-
 - “type” = Job type (see list for available values)
 - “sector” = send the idibu vacancy sector (see list for available values)
 - “starts” = vacancy start date - in yyyy-mm-dd format with leading zeroes (e.g. 2013-06-25)
