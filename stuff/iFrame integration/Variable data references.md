@@ -60,11 +60,11 @@
 
 ## Salary payment interval (per)
 
-1 – Annum
-2 – Month
-3 – Week
-4 – Day
-5 - Hour
+- 1 – Annum
+- 2 – Month
+- 3 – Week
+- 4 – Day
+- 5 - Hour
 
 
 Next up: [Frequently asked questions](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Frequently%20asked%20questions.md)
