@@ -29,7 +29,7 @@ You need to create a private application inside your idibu v3 account to generat
 
 You are ready to go.
 
-Next up: Loading the iFrame
+Next up: [Loading the iFrame](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Loading%20the%20iFrame.md)
 
 [Back to home](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/README.md)
 
