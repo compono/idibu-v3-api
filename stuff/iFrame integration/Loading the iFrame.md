@@ -34,6 +34,7 @@ Example required variables URL to test with:
 The following list are the variables **we highly recommend** to provide the best possible user experience to our mutual clients:
 
 - “group” = group to assign the new user to. We recommend always using a default group because you can apply permissions to this group for all new users to inherit
+
 Location of the vacancy sent using two variables (Longitude, Latitude):
 - “lat” = Latitude value
 - “lng = Longitutde” value TBC the format with tech team
