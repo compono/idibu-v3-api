@@ -2,7 +2,7 @@ We will use Bullhorn as an example of how to embed idibu using an iFrame. While 
 
 Typically the area idibu will be working inside a Vacancy looks like this:
 
-![image4.png](idibu-v3-api/stuff/iFrame integration/images/image4.png)
+![image4.png]({{site.baseurl}}/idibu-v3-api/stuff/iFrame integration/images/image4.png)
 
 1. Single navigation link inside the Vacancy object to load the idibu CRM iFrame
 2. idibu content loaded inside given iFrame window area
