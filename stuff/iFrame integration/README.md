@@ -15,3 +15,7 @@ Integration is quick and efficient, maintains standardised UI support, but allow
 4. [Variable data references](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Variable%20data%20references.md)
 
 5. [Frequently asked questions](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Frequently%20asked%20questions.md)
+
+## Getting support
+
+To get support from the idibu team, please [raise a GitHub issue here](https://github.com/oneworldmarket/idibu-v3-api/issues).
