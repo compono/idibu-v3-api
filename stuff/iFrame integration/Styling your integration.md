@@ -12,9 +12,7 @@ This will allow us to implement style overrides to make the integration match yo
 @brand-color: #D30E7A;
 ```
 
-We can work with you to fine-tune the styling, a full CSS ruleset reference can be found here:
-
-https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Styling/example_theme_config.md
+We can work with you to fine-tune the styling, a full CSS ruleset reference can be [found here](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Styling/example_theme_config.md).
 
 
 Next up: [Variable data references](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Variable%20data%20references.md)
