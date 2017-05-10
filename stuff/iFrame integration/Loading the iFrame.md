@@ -18,7 +18,7 @@ We will use this to work out if a new user needs to be created, or if we are wor
 
 The following list are the variables that **must** be passed for the integration to work:
 
-- “integration” = use a default of “iframe”. We will supply you with your own partner name when custom styling is required for your integration. 
+- Use a default of “idibu” as your partner name which will load the default idibu styles. We will supply you with your own partner name when custom styling is required for your integration. 
 - “id” = your application ID created previously
 - “secret” = your application SECRET created previously
 - “vacancy” = unique identifier of your vacancy (will be used as the idibu reference)
@@ -30,7 +30,7 @@ The following list are the variables that **must** be passed for the integration
 
 Example required variables URL to test with:
 ```
-https://v3.idibu.com/c/integration/iframe/id/<ID>/secret/<SECRET>/vacancy/12345/title/Test%20Vacancy%20Using%20idibu%20iFrame/email/test@test.com/fname/John/lname/Doe
+https://v3.idibu.com/c/integration/idibu/id/<ID>/secret/<SECRET>/vacancy/12345/title/Test%20Vacancy%20Using%20idibu%20iFrame/email/test@test.com/fname/John/lname/Doe
 ```
 
 ### Recommended variables
@@ -56,7 +56,7 @@ Location of the vacancy sent using two variables (Longitude, Latitude):
 Example recommended variables URL to test with:
 
 ```
-https://v3.idibu.com/c/integration/iframe/id/<ID>/secret/<SECRET>/vacancy/12345/title/Test%20Vacancy%20Using%20idibu%20iFrame/email/test@test.com/fname/John/lname/Doe/lat/51.0/lng/-0.1/type/1/sector/18/starts/2017-06-24/currency/GBP/minsalary/25000/maxsalary/35000/per/1/benefits/Premium%20Health%20Care/salarydesc/30000%20GBP%20or%20more/description/Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Aenean%20malesuada%20risus%20orci%2C%20vitae%20congue%20elit%20pulvinar%20a.%20Curabitur%20metus%20eros%2C%20accumsan%20a%20mi%20vitae%2C%20consequat%20finibus%20metus.%20Nam%20venenatis%20at%20orci%20quis%20convallis.%20%0D%0A%0D%0APellentesque%20nec%20quam%20laoreet%2C%20pretium%20ex%20sed%2C%20lacinia%20mi.%20Vestibulum%20tristique%2C%20magna%20eget%20dictum%20egestas%2C%20felis%20erat%20malesuada%20lorem%2C%20vitae%20sollicitudin%20lacus%20quam%20sed%20risus.%20Proin%20feugiat%20bibendum%20ligula%20non%20venenatis.%20Phasellus%20tincidunt%20metus%20at%20tellus%20rhoncus%2C%20ac%20hendrerit%20est%20blandit.
+https://v3.idibu.com/c/integration/idibu/id/<ID>/secret/<SECRET>/vacancy/12345/title/Test%20Vacancy%20Using%20idibu%20iFrame/email/test@test.com/fname/John/lname/Doe/lat/51.0/lng/-0.1/type/1/sector/18/starts/2017-06-24/currency/GBP/minsalary/25000/maxsalary/35000/per/1/benefits/Premium%20Health%20Care/salarydesc/30000%20GBP%20or%20more/description/Lorem%20ipsum%20dolor%20sit%20amet%2C%20consectetur%20adipiscing%20elit.%20Aenean%20malesuada%20risus%20orci%2C%20vitae%20congue%20elit%20pulvinar%20a.%20Curabitur%20metus%20eros%2C%20accumsan%20a%20mi%20vitae%2C%20consequat%20finibus%20metus.%20Nam%20venenatis%20at%20orci%20quis%20convallis.%20%0D%0A%0D%0APellentesque%20nec%20quam%20laoreet%2C%20pretium%20ex%20sed%2C%20lacinia%20mi.%20Vestibulum%20tristique%2C%20magna%20eget%20dictum%20egestas%2C%20felis%20erat%20malesuada%20lorem%2C%20vitae%20sollicitudin%20lacus%20quam%20sed%20risus.%20Proin%20feugiat%20bibendum%20ligula%20non%20venenatis.%20Phasellus%20tincidunt%20metus%20at%20tellus%20rhoncus%2C%20ac%20hendrerit%20est%20blandit.
 ```
 
 ### “Nice to have” variables
