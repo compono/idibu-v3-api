@@ -37,16 +37,19 @@ https://v3.idibu.com/c/integration/idibu/id/<ID>/secret/<SECRET>/vacancy/12345/t
 
 The following list are the variables **we highly recommend** to provide the best possible user experience to our mutual clients:
 
-#### User group allocation
+#### User group
 
 - “group” = group to assign the new user to. We recommend always using a default group because you can apply permissions to this group for all new users to inherit
 
-#### User group allocation
+#### Location
 
 To provide us with the vacancy, you have 2 options - supply the geo-location or the postcode:
 
 -  “lat” = Latitude value
 -  “lng” = Longitutde value
+
+OR
+
 -  “country” = supply the 2-digit ISO 3166 country code (https://www.iso.org/iso-3166-country-codes.html) if you want idibu to find the geo-location using the postcode
 -  “map-postcode” = rather then provide a geo-ocation, you can provide a post code as a location source. idibu will use the google location API to get the geo-location. You must supply the country too so we know where to search.
 
