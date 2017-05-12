@@ -43,17 +43,17 @@ The following list are the variables **we highly recommend** to provide the best
 
 #### Location
 
-To provide us with the vacancy, you have 2 options - supply the geo-location or the postcode:
+To provide us with the vacancy, you have 2 options - supply the geolocation or the postcode:
 
 -  “lat” = Latitude value
 -  “lng” = Longitutde value
 
 OR
 
--  “country” = supply the 2-digit ISO 3166 country code (https://www.iso.org/iso-3166-country-codes.html) if you want idibu to find the geo-location using the postcode
--  “map-postcode” = rather then provide a geo-ocation, you can provide a post code as a location source. idibu will use the google location API to get the geo-location. You must supply the country too so we know where to search.
+-  “country” = supply the 2-digit ISO 3166 country code (https://www.iso.org/iso-3166-country-codes.html) if you want idibu to find the geolocation using the postcode
+-  “map-postcode” = rather then provide a geolocation, you can provide a post code as a location source. idibu will use the google location API to get the geolocation. You must supply the country too so we know where to search.
 
-Note: if you supply both the geo-location will take precedent.
+Note: if you supply both the geolocation will take precedent.
 
 #### Other variables
 
