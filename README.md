@@ -2,7 +2,7 @@
 
 ## iFrame integration
 
-Full documentation for how to embed the latest idibu services inside your own system [can be found here](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Loading%20the%20iFrame.md).
+Full documentation for how to embed the latest idibu services inside your own system [can be found here](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/README.md).
 
 ## REST API
 
