@@ -4,6 +4,9 @@ This document explains how to embed idibu v3 inside third-party systems such as 
 
 Integration is quick and efficient, maintains standardised UI support, but allows the idibu partner some scope to style and personalise. Make sure you have access to an idibu test account before starting.
 
+## Watch the introductory video
+[![](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/images/BH-video.png?raw=true)](https://www.youtube.com/watch?v=-JHiC-OeIQM)
+
 ## Table of contents
 
 1. [Getting started](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Getting%20started.md)
