@@ -1,8 +1,14 @@
-## Composing the URL variables
+## Loading the iFrame
 
-To keep it very quick and easy to create your integration with idibu, you are going to send ALL the information required to deal with vacancy and user synchronisation in the iFrame URL.
+It's very quick and easy to create your integration with idibu, you just need to send ALL the information required to deal with vacancy and user synchronisation to the iFrame URL.
 
-All parameters can be provided in either a traditional HTTP GET or POST fashion and must be URL encoded. POST is recommended to get past any character count limits typical for GET method.
+### IMPORTANT - Please use POST METHOD and not GET
+
+While we do support the GET method, we STRONGLY recommend and request you do not use it unless it is absolutely necessary. Please use the POST method.
+
+If you are using the GET method, you are limited to a maximum of 2,048 characters, minus the number of characters in the actual path. That means Job Descriptions get cutoff, integrations fail and we have unhappy customers. So, again - unless you have a very compelling reason to use GET and are willing to ensure your data remains within URL length limitations, please use POST :)
+
+In case you still prefer to use GET method, please make sure all your parameters are URL encoded.
 
 ### Vacancy and user syncronisation rules
 
