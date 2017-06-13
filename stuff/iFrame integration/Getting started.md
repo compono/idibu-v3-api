@@ -27,6 +27,10 @@ You need to create a private application inside your idibu v3 account to generat
 
 ![](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/images/image5.png?raw=true)
 
+6. Navigate to “Settings” -> “Manage plugins & addons” or directly to https://v3.idibu.com/c/applications/manage and enable the plugin you just created
+
+![](https://github.com/dmitriydzyuba/idibu-v3-api/raw/master/stuff/iFrame%20integration/images/image6.png?raw=true)
+
 You are ready to go.
 
 Next up: [Loading the iFrame](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Loading%20the%20iFrame.md)
