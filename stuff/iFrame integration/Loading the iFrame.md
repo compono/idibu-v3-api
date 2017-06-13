@@ -2,7 +2,7 @@
 
 To keep it very quick and easy to create your integration with idibu, you are going to send ALL the information required to deal with vacancy and user synchronisation in the iFrame URL.
 
-## IMPORTANT - Please use POST METHOD and not GET
+### IMPORTANT - Please use POST METHOD and not GET
 
 While we do support the GET method, we STRONGLY recommend and request you do not use it unless it is absolutely necessary. Please use the POST method.
 
