@@ -4,6 +4,10 @@
 
 Full documentation for how to embed the latest idibu services inside your own system [can be found here](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/README.md).
 
+## Webhooks (Work in progress)
+
+This documentation shows you how to use our webhooks to build great integrations.
+
 ## REST API
 
 We will be releasing details on our REST API soon.
