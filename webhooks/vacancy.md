@@ -1,4 +1,8 @@
-*this is a work in pending article. Informartion provided here may change and is not yet finalised.*
+# disclaimer
+
+* This is a work in pending article. Informartion provided here may change and is not yet finalised. *
+
+## Overview
 
 This webhooks feeds data when a vacancy is [created](http://v3-docs.idibu.com/article/277-adding-a-vacancy-article) or updated. You can use this webhook to:
 
@@ -7,6 +11,8 @@ This webhooks feeds data when a vacancy is [created](http://v3-docs.idibu.com/ar
 - collect vacancy's created numbers, their livespan and ownership distribution for your custom reporting. You can potentially break this information by additional parameters like job type, location, sector and others,
 - collect vacancy data for analysis purposes - ie. track whether vacancies that have longer descriptions provide more applicants then those that choose their words carefully,
 - and others!
+
+## Data
 
 Every webhook call contains every vacancy field that is present on vacancy's details page in idibu:
 
@@ -29,7 +35,7 @@ Every webhook call contains every vacancy field that is present on vacancy's det
 - client_name - name and surname of the consultant that created the vacancy.
 
 
-## Vacancy added webhook example
+## Examples
 
 *Header*
 
