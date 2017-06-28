@@ -1,8 +1,35 @@
-This webhooks feeds data when a vacancy is [created](http://v3-docs.idibu.com/article/277-adding-a-vacancy-article) or updated.
+*this is a work in pending article. Informartion provided here may change and is not yet finalised.*
 
-Vacancy added webhook example:
+This webhooks feeds data when a vacancy is [created](http://v3-docs.idibu.com/article/277-adding-a-vacancy-article) or updated. You can use this webhook to:
 
-## JSON
+- synch vacancies created in idibu with your system,
+- track any changes to those vacancies,
+- collect vacancy's created numbers, their livespan and ownership distribution for your custom reporting. You can potentially break this information by additional parameters like job type, location, sector and others,
+- collect vacancy data for analysis purposes - ie. track whether vacancies that have longer descriptions provide more applicants then those that choose their words carefully,
+- and others!
+
+Every webhook call contains every vacancy field that is present on vacancy's details page in idibu:
+
+- id - numerical identifier of a job on idibu's end. It's main uniqueness indicator,
+- title" - vacancy title,
+- search_keywords - phrase used for local search initially when vacancy becomes created and as a reference for further candidate searches,
+- location - vacancy location, string,
+- job_type - identified job type ,
+- duration - contact duration, only available for contract job_types,
+- sector - numerical identifier for chosen job sector - values can be found [here](http://www.idibu.com/images/stories/Portal_logos/idibu_sector_list.xls), 
+- reference - vacancy reference - can be used as uniqueness indicator if your users do not login to idibu's direct interface where it is possible to edit a reference,
+- start_date - declared position opening date
+- salary that constitutes of:
+	- currency - either AUD, CHF, GBP, HKD, NZD, SGD, USD or EUR,
+	- salary_min - minimum salary,
+	- salary_max - maximum salary,
+	- salary_per - salary period either annum, month, week, day or hour,
+- description - vacancy description,
+- creation_date - date when the vacancy was created,
+- client_name - name and surname of the consultant that created the vacancy.
+
+
+## Vacancy added webhook example
 
 *Header*
 
@@ -35,7 +62,7 @@ Content-Type: application/json
 		},
 		"description": "",
 		"creation_date": "2017-06-27",
-		"client_name": "bugtest2 bugtest2"
+		"client_name": "Consultant"
 	}
 }
 ```
@@ -72,9 +99,7 @@ Content-Type: application/json
 		},
 		"description": "",
 		"creation_date": "2017-06-27",
-		"client_name": "bugtest2 bugtest2"
+		"client_name": "Consultant"
 	}
 }
 ```
-
-## x-www-form-encoded
