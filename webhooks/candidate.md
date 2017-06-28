@@ -4,7 +4,7 @@ This is a work in progress article. Information provided here is subjected to ch
 
 ## Overview
 
-This webhooks faeeds data when a candidate profile is [created](http://v3-docs.idibu.com/article/289-uploading-candidates-article) or updated. You can use this webhook to:
+This webhooks feeds data when a candidate profile is [created](http://v3-docs.idibu.com/article/289-uploading-candidates-article) or updated. You can use this webhook to:
 
 - synch candidates created in idibu with your system,
 - track any changes to their profiles,
@@ -16,12 +16,12 @@ This webhooks faeeds data when a candidate profile is [created](http://v3-docs.i
 
 Every webhook call contains selected candidate fields that are present on candidate's profile page in idibu:
 
-- firstname - candite's first name,
+- firstname - candidate's first name,
 - lastname - we're sure you know what that is,
 - job_title - candidate's last position as declared in CV,
 - phone - candidate's landline number,
 - phone_mobile - candidate's mobile phone number,
-- address - candidate's phisical address,
+- address - candidate's physical address,
 - background_info - field that can be populated by a consultant with his insights on the candidate,
 - country_code - the 3 field geolocation data on candidate's location,
 - lat,
