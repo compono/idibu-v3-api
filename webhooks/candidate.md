@@ -47,10 +47,8 @@ Every webhook call contains selected candidate fields that are present on candid
 *Header*
 
 ```
-User-Agent: IdibuV3-Hookshot
-X-IdibuV3-Delivery: 49da521a-c172-4819-b69a-89f59fa3cef1
-X-IdibuV3-Event: update.vacancy
-Content-Type: application/json
+Request URL: https://requestb.in/y9gkwoy9
+Content-Type: application/x-www-form-urlencoded
 ```
 
 *Payload*
@@ -77,40 +75,4 @@ Content-Type: application/json
 }
 ```
 
-### Vacancy updated example
-
-*Header*
-
-```
-User-Agent: IdibuV3-Hookshot
-X-IdibuV3-Delivery: 1fcee84b-75dd-4ee0-bbb3-260459568d31
-X-IdibuV3-Event: update.vacancy
-Content-Type: application/json
-```
-
-*Payload*
-```
-{
-	"payload": {
-		"id": "7886",
-		"title": "MeNextVacancy",
-		"search_keywords": "",
-		"location": "London",
-		"job_type": "2",
-		"duration": "",
-		"sector": "0",
-		"reference": "BB-73",
-		"start_date": "2017-06-27",
-		"salary": {
-			"currency": "GBP",
-			"salary_min": "40000.00",
-			"salary_max": "50000.00",
-			"salary_per": "annum"
-		},
-		"description": "",
-		"creation_date": "2017-06-27",
-		"client_name": "Consultant"
-	}
-}
-```
 
