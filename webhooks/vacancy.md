@@ -1,3 +1,9 @@
+This webhooks feeds data when a vacancy is [created](http://v3-docs.idibu.com/article/277-adding-a-vacancy-article) or updated.
+
+Vacancy added webhook example:
+
+##JSON##
+
 *Header*
 
 ```
@@ -33,3 +39,42 @@ Content-Type: application/json
 	}
 }
 ```
+
+Vacancy updated webhook example:
+
+*Header*
+
+```
+User-Agent: IdibuV3-Hookshot
+X-IdibuV3-Delivery: 1fcee84b-75dd-4ee0-bbb3-260459568d31
+X-IdibuV3-Event: update.vacancy
+Content-Type: application/json
+```
+
+*Payload*
+```
+{
+	"payload": {
+		"id": "7886",
+		"title": "MeNextVacancy",
+		"search_keywords": "",
+		"location": "London",
+		"job_type": "2",
+		"duration": "",
+		"sector": "0",
+		"reference": "BB-73",
+		"start_date": "2017-06-27",
+		"salary": {
+			"currency": "GBP",
+			"salary_min": "40000.00",
+			"salary_max": "50000.00",
+			"salary_per": "annum"
+		},
+		"description": "",
+		"creation_date": "2017-06-27",
+		"client_name": "bugtest2 bugtest2"
+	}
+}
+```
+
+##x-www-form-encoded##
