@@ -37,6 +37,8 @@ Every webhook call contains every vacancy field that is present on vacancy's det
 
 ## Examples
 
+### Vacancy added example
+
 *Header*
 
 ```
@@ -73,7 +75,7 @@ Content-Type: application/json
 }
 ```
 
-Vacancy updated webhook example:
+### Vacancy updated example
 
 *Header*
 
