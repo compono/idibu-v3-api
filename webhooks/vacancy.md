@@ -2,7 +2,7 @@ This webhooks feeds data when a vacancy is [created](http://v3-docs.idibu.com/ar
 
 Vacancy added webhook example:
 
-##JSON##
+## JSON
 
 *Header*
 
@@ -77,4 +77,4 @@ Content-Type: application/json
 }
 ```
 
-##x-www-form-encoded##
+## x-www-form-encoded
