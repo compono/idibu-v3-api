@@ -1,6 +1,6 @@
 ### Disclaimer
 
-This is a work in pending article. Informartion provided here may change and is not yet finalised.
+This is a work in progress article. Information provided here is subjected to change and is not yet finalised.
 
 ## Overview
 
@@ -9,7 +9,7 @@ This webhooks feeds data when a vacancy is [created](http://v3-docs.idibu.com/ar
 - synch vacancies created in idibu with your system,
 - track any changes to those vacancies,
 - collect vacancy's created numbers, their livespan and ownership distribution for your custom reporting. You can potentially break this information down by additional parameters like job type, location, sector and others,
-- collect vacancy data for analysis purposes - ie. track whether vacancies that have longer descriptions provide more applicants then those that choose their words carefully,
+- collect vacancy data for analysis purposes - i.e. track whether vacancies that have longer descriptions provide more applicants then those that choose their words carefully,
 - and others!
 
 ## Data
