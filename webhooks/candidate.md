@@ -52,25 +52,68 @@ Content-Type: application/x-www-form-urlencoded
 ```
 
 *Payload*
-```
+```json
 {
 	"payload": {
+		"id": "13359",
 		"firstname": "Paul",
 		"lastname": "Edwards",
 		"job_title": "People and Performance Superintendent",
 		"phone": "",
 		"phone_mobile": "",
+		"email": "p_edwards@hotmail.com",
 		"address": "",
+		"location": {
+			"lat": "0",
+			"lng": "0"
+		},
+		"country": "",
 		"background_info": "",
-		"country_code": "",
-		"lat": "0",
-		"lng": "0",
-		"work_history": "**People and Performance Superintendent - From Feb 2011 To May 2011:**\r\n\r\nWith performance management issues to improve people management competencies\r\nContract role\r\n{Talent2 initiated 3 month    Ausenco (www.ausenco.com) [Brisbane Australia]\r\nContract; lead HR strategic\r\nAnd operational planning    Global engineering, project management services and operations solutions provider for\r\nFor two prospective EPCM    resources and energy sectors, listed on ASX and head-quartered Brisbane\r\nProjects with potential to be\r\nLead HR for the projects in    People and Performance Superintendent - Major Projects\r\nSouth America; projects    Responsible for People and Performance (P&P) strategy, planning, design and\r\nDidn't eventuate (`Mina\r\nJusta' sold by Glencore and    implementation tools for global projects\r\n`Constancia' delayed) so    Achievements\r\nWith    no    other    work\r\nAvailable, contract came to    * Developed project conditions, contracts, templates, and remuneration strategy\r\nAn end}\r\nFor South American jurisdictions; referencing/interpreting relevant local\r\n\r\n,
-		"education_history": "Certified Professional Member Australian Human Resources Institute\r\nMaster of Commerce\r\nCSU (currently enrolled - International Business & International HRM)\r\n\r\n**2013:**\r\nMaster of Business Administration in Human Resource Management\r\n*    MBA (Strategic Human Resource Management) - USQ\r\n\r\n**1990:**\r\nBachelor of Arts in Psychology\r\n\r\n**Feb 2015:**\r\nDiploma\r\n\r\n**2014:**\r\nGraduate Diploma in Career Education & Development\r\n\r\n**Feb 2014 - Dec 2014:**\r\nDiploma\r\n\r\n**Jun 2017 - 2009:**\r\n*    Diversity, leadership and\r\n-    *    Board composition, structure    effective teams\r\nAnd selection criteria of\r\nDirectors",
-		"email, appt.source": "p_edwards@hotmail.com",
-		"creation_date": "2017-06-28 15:57:46",
-		"createby_firstname": "bugtest2",
-		"createby_lastname": "bugtest2"
+		"created_by": {
+			"id": "164",
+			"firstname": "bugtest2",
+			"lastname": "bugtest2"
+		},
+		"creation_date": "2017-06-28 15:57:55",
+		"source": "Added manually",
+		"vacancies": [
+			{
+				"id": "4526",
+				"reference": "BB-74",
+				"title": "Brand new vacancy update",
+				"status": {
+					"status_id": "10",
+					"status_type": "default"
+				}
+			}
+		],
+		"attachments": [
+			{
+				"file_id": "15097",
+				"filename": "Resume_Paul_Edwards_E2P_16-07-11.pdf",
+				"file_link": "https://v3-beta.idibu.com/c/cloud/get-file/clientID/164/type/apptrack/file/Y3ZfZGF0YV8yMDE3XzA2LzE2NC8xMy9lMDMzMjM3ZDQwZjI5YTAwYzljMzhiNTc0MmUzZGVlZC5wZGY=/id/15097",
+				"type": "cv_doc"
+			}
+		],
+		"custom_fields": [
+			{
+				"value": "",
+				"name": "Current"
+			},
+			{
+				"value": "No",
+				"name": "Willing to relocate"
+			},
+			{
+				"value": "",
+				"name": "Will he/she ask questions?"
+			}
+		],
+		"cv": {
+		}
+	},
+	"payload-information": {
+		"timestamp": "2017-07-03T10:25:44+01:00"
 	}
 }
 ```
