@@ -52,7 +52,7 @@ Content-Type: application/x-www-form-urlencoded
 ```
 
 *Payload*
-```json
+```
 {
 	"payload": {
 		"id": "13359",
