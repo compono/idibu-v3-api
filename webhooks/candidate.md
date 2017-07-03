@@ -48,7 +48,11 @@ Every webhook call contains selected candidate fields that are present on candid
 
 ```
 Request URL: https://requestb.in/y9gkwoy9
-Content-Type: application/x-www-form-urlencoded
+Request method: POST
+User-Agent: Idibu-Hookshot
+X-Idibu-Delivery: f38a0abc-dc1d-4e3c-bb63-dfc1acd9ce88
+X-Idibu-Event: candidate-extend.update
+Content-Type: application/json
 ```
 
 *Payload*
