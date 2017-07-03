@@ -16,29 +16,46 @@ This webhooks feeds data when a candidate profile is [created](http://v3-docs.id
 
 Every webhook call contains selected candidate fields that are present on candidate's profile page in idibu:
 
-- firstname - candidate's first name,
-- lastname - we're sure you know what that is,
-- job_title - candidate's last position as declared in CV,
-- phone - candidate's landline number,
-- phone_mobile - candidate's mobile phone number,
-- address - candidate's physical address,
-- background_info - field that can be populated by a consultant with his insights on the candidate,
-- country_code - the 3 field geolocation data on candidate's location,
-- lat,
-- lng,
-- work_history - candidates encoded work history broken into periods from latest to oldest with position title, employed dates, employer and summary of the position.
-- education_history - candidates encoded education history broken into periods from latest to oldest with course name, education dates, school and course summary.
+- `id` - 
+- `firstname` - candidate's first name,
+- `lastname` - we're sure you know what that is,`
+- `job_title` - candidate's last position as declared in CV,
+- `phone` - candidate's landline number,
+- `phone_mobile` - candidate's mobile phone number,
+- `email` - you guessed it, candidate's email,
+- `address` - candidate's physical address,
+- `location`
+  - `lat`
+  - `lng`
+- `country` - the 3 field geolocation data on candidate's location,
+- `background_info` - field that can be populated by a consultant with his insights on the candidate,
+
+- `work_history` - candidates encoded work history broken into periods from latest to oldest with position title, employed dates, employer and summary of the position.
+- `education_history` - candidates encoded education history broken into periods from latest to oldest with course name, education dates, school and course summary.
 
 *Both work_history and education_history are parsed from candidate's CV and thus presence of all elements, its quality and detail depend on the CV itself and the success of the parsing process. Expect possible, thought rare, inconsistencies.*
 
-- email - you guessed it, candidate's email,
-- appt.source - candidates original source,
-- creation_date - date candidate was originally added to the system
-- createby_firstname - name of the consultant who added the candidate to the system or original owner of the vacancy the applicant applied for,
-- createby_lastname - surname, as above.
-
-
-
+- `created_by`
+  - `id`
+  - `firstname` - name of the consultant who added the candidate to the system or original owner of the vacancy the applicant applied for,
+  - `lastname` - surname, as above.
+- `creation_date` - date candidate was originally added to the system
+- `source` - candidates original source,
+- `vacancies`
+  - `id` - 
+  - `reference` - 
+  - `title` - 
+  - `status` 
+    - `status_id` -
+    - `status_type` - 
+- `attachments`
+  - `file_id` - 
+  - `filename` - 
+  - `file_link` - 
+  - `type` -
+- `custom_fields`
+  - `value` - 
+  - `name` - 
 
 ## Examples
 
@@ -112,9 +129,7 @@ Content-Type: application/json
         "value": "",
         "name": "Will he/she ask questions?"
       }
-    ],
-    "cv": {
-    }
+    ]
   },
   "payload-information": {
     "timestamp": "2017-07-03T10:25:44+01:00"
