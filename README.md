@@ -6,7 +6,7 @@ Full documentation for how to embed the latest idibu services inside your own sy
 
 ## Webhooks (Work in progress)
 
-This documentation shows you how to use our webhooks to build great integrations.
+This documentation shows you how to use our webhooks to build great integrations. [can be found here](https://github.com/oneworldmarket/idibu-v3-api/tree/master/stuff/webhooks).
 
 ## REST API
 
