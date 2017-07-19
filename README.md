@@ -15,3 +15,5 @@ We will be releasing details on our REST API soon.
 ## Support
 
 For any support on embedding idibu v3 into your CRM or working with the idibu v3 API's please use the <a href="https://github.com/oneworldmarket/idibu-v3-api/issues">issues</a> area of this repository.
+
+Also, please note that these applets are designed for the newest idibu platform (often refered as "idibu V3"). In selected cases, they can be supplemented by idibu classic version's (also known as idibu V3) webservices which are documented [here](https://github.com/oneworldmarket/idibu-api).
