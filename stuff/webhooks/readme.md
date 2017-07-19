@@ -12,7 +12,8 @@ Correctly coding the system to scale like this will save a lot of time in the lo
 
 # How to activate a webhook in idibu?
 
-[[http://www.idibu.com/img/clientportal_logos/wk_generals.png]]
+<img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.idibu.com/img/clientportal_logo/wk_generals.png" alt="" width="633" height="836" />
+
 
 
 1. Vacancy - Vacancy created or updated
