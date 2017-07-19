@@ -31,10 +31,10 @@ __Secret__ - non-required parameter you can add to authenticate your own request
 
 __Content sent__ - You can either have all events sent to the provided URL or you can choose from the following. Please note that this list contains links to pages that show example payloads sent:
 
-1. [https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/webhooks/vacancy.md](Vacancy) - Vacancy created or updated
+1. [Vacancy](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/webhooks/vacancy.md) - Vacancy created or updated
 2. Attract - Candidate attraction events.
 3. Search - Talent pool searches ran.
-4. [https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/webhooks/candidate.md](Candidate) - Candidate create or updated.
+4. [Candidate](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/webhooks/candidate.md) - Candidate create or updated.
 5. Candidate extended - Full profile data sent.
 6. Users - User profile activity (login).
 7. Post - Post and repost advert.
