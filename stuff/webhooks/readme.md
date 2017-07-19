@@ -12,9 +12,24 @@ Correctly coding the system to scale like this will save a lot of time in the lo
 
 # How to activate a webhook in idibu?
 
-<img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.idibu.com/img/clientportal_logo/wk_generals.png" alt="" width="633" height="836" />
+Webhook management page can be found in idibu's general settings, under the "webhook settings" tab. The green button is used to add a new webhook:
+
+<img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.idibu.com/img/clientportal_logos/wk_generals.png" alt="" />
 
 
+<img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.idibu.com/img/clientportal_logos/wk_webset.png" alt="" />
+
+<img style="display: block; margin-left: auto; margin-right: auto;" src="http://www.idibu.com/img/clientportal_logos/ad_webhook.png" alt="" />
+
+Let's go through the fields, shall we?
+
+__Payload URL__ - the URL where the webhooks will be sent. We reccomend using [https://requestb.in/](https://requestb.in/) for testing.
+
+__Content type__ - define the format of the webhooks sent. It's either a json or x-www-form-urlencoded.
+
+__Secret__ - non-required parameter you can add to authenticate your own requests. You can append it with SSL verification.
+
+__Content sent__ - You can either have all events sent to the provided URL or you can choose from the following. Please note that this list contains links to pages that show example payloads sent:
 
 1. Vacancy - Vacancy created or updated
 2. Attract - Candidate attraction events
@@ -23,3 +38,14 @@ Correctly coding the system to scale like this will save a lot of time in the lo
 5. Candidate extended - Full profile data sent
 6. Users - User profile activity (login)
 7. Post - Post and repost advert
+
+besides that you can de-activate and re-activate your hook using a dedicated checkbox. This page also contains a log of a recent hooks send and will show errors, if those are encountered!
+
+# Webhook responses - how should the listening script react after receiving a hook?
+
+Your webhook acknowledges that it received data by sending a 200 OK response. Any response outside of the 200 range will let idibu know that you did not receive your webhook. idibu has implemented a 5-second timeout period and a retry period for subscriptions. We wait 5 seconds for a response to each request, and if there isn't one or we get an error, we retry the connection to a total of 19 times over the next 48 hours. A webhook will be disabled if there are 19 consecutive failures for the exact same webhook. 
+
+If you're receiving a idibu webhook, the most important thing to do is respond quickly. There have been several historical occurrences of apps that do some lengthy processing when they receive a webhook that triggers the timeout. This has led to situations where webhooks were removed from functioning apps.
+
+To make sure that apps don't accidentally run over the timeout limit, we now recommend that apps defer processing until after the response has been sent.
+
