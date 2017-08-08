@@ -54,7 +54,7 @@ The following list are the variables **we highly recommend** to provide the best
 To provide us with the vacancy, you have 2 options - supply the geolocation or the postcode:
 
 -  “lat” = Latitude value
--  “lng” = Longitutde value
+-  “lng” = Longitude value
 
 OR
 
