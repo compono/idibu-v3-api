@@ -6,7 +6,7 @@ This is a work in progress article. Information provided here is subjected to ch
 
 This webhooks feeds data when a candidate profile is [created](http://v3-docs.idibu.com/article/289-uploading-candidates-article) or updated. You can use this webhook to:
 
-- synch candidates created in idibu with your system,
+- synchronize candidates created in idibu with your system,
 - track any changes to their profiles,
 - collect candidate's created numbers, their data and which step of the recruitment process are they currently at. You can potentially break this information down by additional parameters like location, current position and others,
 - collect candidate data for analysis purposes - i.e. track which location brought most placed candidates, what is your most successful source, etc.
