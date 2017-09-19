@@ -69,9 +69,43 @@ Type: `POST`
 
 Description: Update webhook details data
 
-Params: TODO
+Params:
+ * `payload_data` - array with webhook data
+   * `id` - webhook id. skip it, if you want to create new webhook
+   * `payload_url` - webhook url. Value: `url string` . Required. Only https urls. 
+   * `events` - list of webhook events in array. Values: `vacancy`, `attract`, `search`, `candidate`, `user`, `post` Default: ` ` (empty)
+   * `send_all_events` - send all events. Values: `1`, `0`. Default: `1`. It will set to default `1` if events list is empty or false.
+   * `active_flag` - is webhook active or not. Values: `on`, `off` . Default: `on`
+   * `ssl_flag` - enable SSL verification. Values: `on`, `off`. Default: `off`
+   
+Example request:
+
+```php
+$idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
+$accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+
+$params = [
+    'method' => 'webhooks/webhook',
+    'access_token' => $accessToken,
+    'payload_data' => [
+        'payload_url' => 'https://example.com/api/v1/webhook-inbound'
+        'events' => ['candidate', 'vacancy']
+        'send_all_events' => 0,
+        'active_flag' => 'on',
+        'ssl_flag' => 'off'
+    ]
+];
+
+$ch = curl_init($idibuAPIEndpoint);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_POST, true);
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+$response = curl_exec($ch);
+curl_close($ch);
+```
 
 Example response: TODO
+
 
 ### Get webhook details
 
@@ -129,7 +163,7 @@ Type: `PUT`
 
 Description: Update webhook details data
 
-Params: TODO
+Params:
 
 Example response: TODO
 
