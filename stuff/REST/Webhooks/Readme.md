@@ -99,7 +99,7 @@ $params = [
 $ch = curl_init($idibuAPIEndpoint);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_POST, true);
-curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
 $response = curl_exec($ch);
 curl_close($ch);
 ```
@@ -194,7 +194,7 @@ $idibuAPIEndpoint .= '?' . http_build_query($params);
 $ch = curl_init($idibuAPIEndpoint);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
-curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
 $response = curl_exec($ch);
 curl_close($ch);
 ```
