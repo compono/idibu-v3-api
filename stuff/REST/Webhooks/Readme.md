@@ -176,7 +176,28 @@ Type: `DELETE`
 
 Description: Delete webhook
 
-Params: TODO
+Params: 
+
+```php
+
+$idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
+$accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+
+$params = [
+    'method' => 'webhooks/webhook',
+    'id' => 'd56b2c06-dc93-430b-990a-45a8fe677eb6',
+    'access_token' => $accessToken
+];
+
+$idibuAPIEndpoint .= '?' . http_build_query($params);
+
+$ch = curl_init($idibuAPIEndpoint);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
+curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($data));
+$response = curl_exec($ch);
+curl_close($ch);
+```
 
 Example response: TODO
 
