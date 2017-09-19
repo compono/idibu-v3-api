@@ -36,7 +36,7 @@ Example response:
 [
   {
     "id": "d56b2c06-dc93-430b-990a-45a8fe677eb6",
-    "payload_url": "http:\/\/local-v3.idibu.com\/t.php",
+    "payload_url": "http:\/\/example.com\/t.php",
     "content_type": "application\/json",
     "secret": "1",
     "send_all_events": "1",
@@ -48,7 +48,7 @@ Example response:
   },
   {
     "id": "e9a05cf1-17d2-4556-a3a3-a930267d3f4e",
-    "payload_url": "https:\/\/local-v3.idibu.com\/t.php",
+    "payload_url": "https:\/\/example.com\/api/webhook-income.php",
     "content_type": "application\/json",
     "secret": "1",
     "send_all_events": "0",
@@ -141,7 +141,7 @@ Example response:
 [
   {
     "id": "e9a05cf1-17d2-4556-a3a3-a930267d3f4e",
-    "payload_url": "https:\/\/local-v3.idibu.com\/t.php",
+    "payload_url": "https:\/\/v3.idibu.com\/t.php",
     "content_type": "application\/json",
     "secret": "1",
     "send_all_events": "0",
