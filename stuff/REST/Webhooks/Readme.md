@@ -14,17 +14,20 @@ Example plain request:
 
 ```php
 $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
-$accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+$access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $params = [
     'method' => 'webhooks/webhook',
-    'access_token' => $accessToken
+    'access_token' => $access_token
 ];
 
 $idibuAPIEndpoint .= '?' . http_build_query($params);
 
 $ch = curl_init($idibuAPIEndpoint);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+	'Authorization: Bearer ' . $access_token,
+]);
 $response = curl_exec($ch);
 curl_close($ch);
 ```
@@ -82,11 +85,10 @@ Example request:
 
 ```php
 $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
-$accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+$access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $params = [
     'method' => 'webhooks/webhook',
-    'access_token' => $accessToken,
     'payload_data' => [
         'payload_url' => 'https://example.com/api/v1/webhook-inbound',
         'events' => ['candidate', 'vacancy'],
@@ -98,6 +100,9 @@ $params = [
 
 $ch = curl_init($idibuAPIEndpoint);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+	'Authorization: Bearer ' . $access_token,
+]);
 curl_setopt($ch, CURLOPT_POST, true);
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
 $response = curl_exec($ch);
@@ -119,18 +124,20 @@ Example request:
 
 ```php
 $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
-$accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+$access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $params = [
     'method' => 'webhooks/webhook',
-    'id' => 'e9a05cf1-17d2-4556-a3a3-a930267d3f4e',
-    'access_token' => $accessToken
+    'id' => 'e9a05cf1-17d2-4556-a3a3-a930267d3f4e'
 ];
 
 $idibuAPIEndpoint .= '?' . http_build_query($params);
 
 $ch = curl_init($idibuAPIEndpoint);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+	'Authorization: Bearer ' . $access_token,
+]);
 $response = curl_exec($ch);
 curl_close($ch);
 ```
@@ -181,18 +188,20 @@ Params:
 ```php
 
 $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
-$accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+$access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $params = [
     'method' => 'webhooks/webhook',
-    'id' => 'd56b2c06-dc93-430b-990a-45a8fe677eb6',
-    'access_token' => $accessToken
+    'id' => 'd56b2c06-dc93-430b-990a-45a8fe677eb6'
 ];
 
 $idibuAPIEndpoint .= '?' . http_build_query($params);
 
 $ch = curl_init($idibuAPIEndpoint);
 curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+	'Authorization: Bearer ' . $access_token,
+]);
 curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "DELETE");
 curl_setopt($ch, CURLOPT_POSTFIELDS, http_build_query($params));
 $response = curl_exec($ch);
