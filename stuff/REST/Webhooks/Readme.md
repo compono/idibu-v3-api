@@ -76,7 +76,7 @@ Params:
  * `payload_data` - array with webhook data
    * `id` - webhook id. skip it, if you want to create new webhook
    * `payload_url` - webhook url. Value: `url string` . Required. Only https urls. 
-   * `events` - list of webhook events in array. Values: `vacancy`, `attract`, `search`, `candidate`, `user`, `post` Default: ` ` (empty)
+   * `events` - list of webhook events in array. Values: `vacancy`, `attract`, `search`, `candidate`, `candidate_extend`, `user`, `post` Default: ` ` (empty)
    * `send_all_events` - send all events. Values: `1`, `0`. Default: `1`. It will set to default `1` if events list is empty or false.
    * `active_flag` - is webhook active or not. Values: `on`, `off` . Default: `on`
    * `ssl_flag` - enable SSL verification. Values: `on`, `off`. Default: `off`
