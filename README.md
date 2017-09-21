@@ -10,7 +10,8 @@ This documentation shows you how to use our webhooks to build great integrations
 
 ## REST API
 
-We will be releasing details on our REST API soon.
+##[RESTful API](https://github.com/oneworldmarket/idibu-v3-api/tree/master/stuff/REST)
+Useful if you build your own service with your own interface. You can use RESTful calls to receive and manage data on behalf of the user who gave you access permission.
 
 ## Support
 
