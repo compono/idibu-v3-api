@@ -17,8 +17,7 @@ $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
 $access_token = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $params = [
-    'method' => 'webhooks/webhook',
-    'access_token' => $access_token
+    'method' => 'webhooks/webhook'
 ];
 
 $idibuAPIEndpoint .= '?' . http_build_query($params);
