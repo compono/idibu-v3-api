@@ -3,17 +3,40 @@ contacts/list
 
 Returns filtered contacts list
 
-Available filters:
+[//]: <> (Available filters:) 
 
- * `status` - filter contacts by status name (New, Rejected, Shortlist..)
- * `phone` - filter contacts by phone number
- * `phone_mobile` - filter contacts by mobile phone number
+[//]: <> ( * `status` - filter contacts by status name (New, Rejected, Shortlist..)
+[//]: <> ( * `phone` - filter contacts by phone number )
+[//]: <> ( * `phone_mobile` - filter contacts by mobile phone number )
 
 Example:
 
+Restful call php curl:
+
+```php
+$idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
+$accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
+
+$params = [
+	'method' => 'contacts/list'
+];
+
+$idibuAPIEndpoint .= '?' . http_build_query($params);
+
+$ch = curl_init($idibuAPIEndpoint);
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+curl_setopt($ch, CURLOPT_HTTPHEADER, [
+	'Authorization: Bearer ' . $access_token,
+]);
+
+$response = curl_exec($ch);
+curl_close($ch);
+
+```
+
 Restful call from Raw PHP:
 ```php
-$data = $WU_API->sendMessageToWU( 'contacts/list', array( 'status' => 'New' ) );
+$data = $WU_API->sendMessageToWU( 'contacts/list', [] );
 var_export( $data );
 ```
 
