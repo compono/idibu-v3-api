@@ -131,7 +131,8 @@ Content-Type: application/json
     ]
   },
   "payload-information": {
-    "timestamp": "2017-07-03T10:25:44+01:00"
+    "timestamp": "2017-07-03T10:25:44+01:00",
+    "webhook_event": "candidate.update"
   }
 }
 ```
