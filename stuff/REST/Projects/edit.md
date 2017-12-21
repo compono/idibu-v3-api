@@ -6,11 +6,11 @@ Parameters:
 | Param        | Required           | Description  |
 | ------------- |:-------------:| -----|
 | method      | yes | method name |
-| access_token      | yes | api access token |
-| project_id | yes      | id of the Vacancy |
+| access_token      | yes | API access token |
+| project_id | yes      | ID of the Vacancy |
 | title | no      | Vacancy title |
 | reference | no      | Vacancy reference |
-| crm_reference | no      | Crm reference |
+| crm_reference | no      | CRM reference |
 | start_date | no      | Vacancy start date |
 | job_benefits | no      | Vacancy job benefits |
 | job_salary_min | no      | Vacancy salary min |
