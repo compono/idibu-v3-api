@@ -5,7 +5,7 @@ Parameters:
 
 | Param        | Required           | Description  |
 | ------------- |:-------------:| -----|
-| method      | yes | method name |
+| method      | yes | Method name |
 | access_token      | yes | API access token |
 | project_id | yes      | ID of the Vacancy |
 | title | no      | Vacancy title |
