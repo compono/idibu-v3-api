@@ -1,7 +1,7 @@
-projects/edit
+Projects/edit
 ===
 
-Params:
+Parameters:
 
 | Param        | Required           | Description  |
 | ------------- |:-------------:| -----|
