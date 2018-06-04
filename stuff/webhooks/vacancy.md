@@ -6,7 +6,7 @@ This is a work in progress article. Information provided here is subjected to ch
 
 This webhooks feeds data when a vacancy is [created](http://v3-docs.idibu.com/article/277-adding-a-vacancy-article) or updated. You can use this webhook to:
 
-- synch vacancies created in idibu with your system,
+- sync vacancies created in idibu with your system,
 - track any changes to those vacancies,
 - collect vacancy's created numbers, their livespan and ownership distribution for your custom reporting. You can potentially break this information down by additional parameters like job type, location, sector and others,
 - collect vacancy data for analysis purposes - i.e. track whether vacancies that have longer descriptions provide more applicants then those that choose their words carefully,
