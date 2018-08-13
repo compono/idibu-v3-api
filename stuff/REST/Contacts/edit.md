@@ -23,6 +23,7 @@ Parameters:
    * `cv` - either base64 encoded content of CV or an array: `content` - base64 encoded content, `name` - cv file name
    * `avatar` - base64 encoded avatar image, should be `jpg`, `png` or `gif`
    * `portal_id` - id of the portal, that will be displayed as a canidate source
+   * `comms_status` - GDPR status. Available values: `unknown`, `applied`, `unsubscribed`
 
 Examples:
 
