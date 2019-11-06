@@ -93,10 +93,10 @@ https://v3.idibu.com/c/integration/[crm_name]?id=<ID>&secret=<SECRET>&vacancy=12
 
 The following list are remaining variables you can utilise to improve the user experience:
 
-- “kws” = Search keywords (we will use the title if this is not supplied) - it’ll help us with auto-matching candidates to the vacancy, accepts Boolean
-- “duration” = Textual description of the duration of a contract position
-- “lpage” = Enable landing pages for this vacancy
-- “lpageid” = ID of the landing page to use with this vacancy
+- `kws` = Search keywords (we will use the title if this is not supplied) - it’ll help us with auto-matching candidates to the vacancy, accepts Boolean
+- `duration` = Textual description of the duration of a contract position
+- `lpage` = Enable landing pages for this vacancy
+- `lpageid` = ID of the landing page to use with this vacancy
 
 
 
