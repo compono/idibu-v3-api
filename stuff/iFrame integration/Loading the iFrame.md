@@ -33,14 +33,15 @@ We will use this to work out if a new user needs to be created, or if we are wor
 The following list are the variables that **must** be passed for the integration to work:
 
 - Use a default of “idibu” as your partner name which will load the default idibu styles. We will supply you with your own partner name when custom styling is required for your integration. 
-- “id” = your application ID created previously
-- “secret” = your application SECRET created previously
-- “vacancy” = unique identifier of your vacancy (will be used as the idibu reference)
-- “title” = vacancy title
-- “userid” = your unique user id
-- “email” = email address of the user
-- “fname” = first name of the user
-- “lname” = last name of the user
+- `id` = your application ID created previously
+- `secret` = your application SECRET created previously
+- `vacancy` = unique identifier of your vacancy (will be used as external crm entity id)
+- `crm_reference` = (optional) reference of your vacancy. If empty system will use the value from `vacancy` parameter. If you would like to provide a reference separately which is different then `vacancy` parameter.
+- `title` = vacancy title
+- `userid` = your unique user id
+- `email` = email address of the user
+- `fname` = first name of the user
+- `lname` = last name of the user
 
 Example required variables URL to test with:
 ```
@@ -53,34 +54,34 @@ The following list are the variables **we highly recommend** to provide the best
 
 #### User group
 
-- “group” = group to assign the new user to. We recommend always using a default group because you can apply permissions to this group for all new users to inherit
+- `group` = group to assign the new user to. We recommend always using a default group because you can apply permissions to this group for all new users to inherit
 
 #### Location
 
 To provide us with the vacancy, you have 2 options - supply the geolocation or the postcode:
 
--  “lat” = Latitude value
--  “lng” = Longitude value
+-  `lat` = Latitude value
+-  `lng` = Longitude value
 
 OR
 
--  “country” = supply the 2-digit ISO 3166 country code (https://www.iso.org/iso-3166-country-codes.html) if you want idibu to find the geolocation using the postcode
--  “map-postcode” = rather then provide a geolocation, you can provide a post code as a location source. idibu will use the google location API to get the geolocation. You must supply the country too so we know where to search.
+-  `country` = supply the 2-digit ISO 3166 country code (https://www.iso.org/iso-3166-country-codes.html) if you want idibu to find the geolocation using the postcode
+-  `map-postcode` = rather then provide a geolocation, you can provide a post code as a location source. idibu will use the google location API to get the geolocation. You must supply the country too so we know where to search.
 
 Note: if you supply both the geolocation will take precedent.
 
 #### Other variables
 
-- “type” = Job type (see [list](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Variable%20data%20references.md) for available values)
-- “sector” = send the idibu vacancy sector (see [list](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Variable%20data%20references.md) for available values)
-- “starts” = vacancy start date - in yyyy-mm-dd format with leading zeroes (e.g. 2013-06-25)
-- “currency” - salary currency sent in standard 3 character format  (see http://www.xe.com/iso4217.php)
-- “minsalary” - minimum salary (e.g. 2000)
-- “maxsalary” - maximum salary (e.g. 3000)
-- “per” - salary payment interval  (see [list](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Variable%20data%20references.md) for available values)
-- “benefits” - extra benefits (e.g. Premium%20Health%20Care)
-- “salarydesc” - optional salary text override (e.g. 2000%20GBP%20or%20more)
-- “description” - full description of the role
+- `type` = Job type (see [list](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Variable%20data%20references.md) for available values)
+- `sector` = send the idibu vacancy sector (see [list](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Variable%20data%20references.md) for available values)
+- `starts` = vacancy start date - in yyyy-mm-dd format with leading zeroes (e.g. 2013-06-25)
+- `currency` - salary currency sent in standard 3 character format  (see http://www.xe.com/iso4217.php)
+- `minsalary` - minimum salary (e.g. 2000)
+- `maxsalary` - maximum salary (e.g. 3000)
+- `per` - salary payment interval  (see [list](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Variable%20data%20references.md) for available values)
+- `benefits` - extra benefits (e.g. Premium%20Health%20Care)
+- `salarydesc` - optional salary text override (e.g. 2000%20GBP%20or%20more)
+- `description` - full description of the role
 
 Example recommended variables URL to test with:
 
