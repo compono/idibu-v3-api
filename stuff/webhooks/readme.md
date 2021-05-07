@@ -23,7 +23,7 @@ Webhook management page can be found in idibu's general settings, under the "web
 
 Let's go through the fields, shall we?
 
-__Payload URL__ - the URL where the webhooks will be sent. We reccomend using [https://requestb.in/](https://requestb.in/) for testing.
+__Payload URL__ - the URL where the webhooks will be sent. We reccomend using [https://requestbin.com/](https://requestbin.com/) for testing.
 
 __Content type__ - define the format of the webhooks sent. It's either a json or x-www-form-urlencoded.
 
