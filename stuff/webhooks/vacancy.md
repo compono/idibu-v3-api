@@ -21,7 +21,7 @@ Every webhook call contains every vacancy field that is present on vacancy's det
 - search_keywords - phrase used for local search initially when vacancy becomes created and as a reference for further candidate searches,
 - location - vacancy location, string,
 - job_type - identified job type ,
-- duration - contact duration, only available for contract job_types,
+- duration - contract duration, only available for contract job_types,
 - sector - numerical identifier for chosen job sector - values can be found [here](http://www.idibu.com/images/stories/Portal_logos/idibu_sector_list.xls), 
 - reference - vacancy reference - can be used as uniqueness indicator if your users do not login to idibu's direct interface where it is possible to edit a reference,
 - start_date - declared position opening date

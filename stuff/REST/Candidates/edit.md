@@ -1,19 +1,19 @@
-contacts/edit
+candidates/edit
 ===
 
-Updates an existent contact in idibu v3.
+Updates an existent candidate in idibu v3.
 
 Parameters:
- * `contact_id` - contact id (Either contact_id or `data`->`email` param is required to match the contact record)
+ * `contact_id` - candidate id (Either contact_id or `data`->`email` param is required to match the candidate record)
  * `status_id` - status id that needs to be changed ([`statuses/list`](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/REST/Statuses/list.md) api call)
  * `project_id` - project id that needs to be changed ([`vacancies/list`](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/REST/Vacancies/list.md) api call)
- * `data` - personal info of contact that needs to be changed
+ * `data` - personal info of candidate that needs to be changed
    * `name` - first and last name (example: `Vitaly Dyatlov`), required
    * `background_info` - background information
    * `email` - email address (will search by email in case contact_id is not provided)
-   * `location` - contact address
+   * `location` - address
    * `history` - work history
-   * `education` - contact education
+   * `education` - education
    * `facebook` - link to facebook
    * `twitter` - link to twitter
    * `linkedin` - link to linkedin profile
@@ -34,7 +34,7 @@ $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
 $accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $data = [
-    'method' => 'contacts/edit',
+    'method' => 'candidates/edit',
     'access_token' => $accessToken,
     'status_id' => 1,
     'project_id' => 123,
@@ -66,8 +66,8 @@ curl_close($ch);
 
 Restful call from Raw PHP:
 ```php
-$data = [
-    'method' => 'contacts/edit',
+$candidateData = [
+    'method' => 'candidates/edit',
     'access_token' => $accessToken,
     'status_id' => 1,
     'project_id' => 123,
@@ -87,12 +87,12 @@ $data = [
         //'avatar' => 'base64 encoded avatar image'
     ]
 ];
-$data = $WU_API->sendMessageToWU( 'contacts/edit', $contact );
+$data = $WU_API->sendMessageToWU( 'candidates/edit', $candidateData );
 var_dump($data);
 ```
 
 ```php
-$contact = array(
+$candidateData = array(
 	'contact_id' => 321,
 	'data' => array(
 		'name' => 'Tim Parker',
@@ -102,7 +102,7 @@ $contact = array(
 	)
 );
 
-$data = $WU_API->sendMessageToWU('contacts/edit', $contact);
+$data = $WU_API->sendMessageToWU('candidates/edit', $candidateData);
 var_dump($data);
 ```
 
