@@ -6,7 +6,7 @@ Updates an existent contact in idibu v3.
 Parameters:
  * `contact_id` - contact id (Either contact_id or `data`->`email` param is required to match the contact record)
  * `status_id` - status id that needs to be changed ([`statuses/list`](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/REST/Statuses/list.md) api call)
- * `project_id` - project id that needs to be changed ([`projects/list`](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/REST/Projects/list.md) api call)
+ * `project_id` - project id that needs to be changed ([`vacancies/list`](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/REST/Vacancies/list.md) api call)
  * `data` - personal info of contact that needs to be changed
    * `name` - first and last name (example: `Vitaly Dyatlov`), required
    * `background_info` - background information
