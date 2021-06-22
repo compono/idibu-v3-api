@@ -1,13 +1,7 @@
-contacts/list
+candidates/get
 ===
 
-Returns filtered contacts list
-
-[//]: <> (Available filters:) 
-
-[//]: <> ( * `status` - filter contacts by status name (New, Rejected, Shortlist..)
-[//]: <> ( * `phone` - filter contacts by phone number )
-[//]: <> ( * `phone_mobile` - filter contacts by mobile phone number )
+Returns information about candidate record identified by `id`
 
 Example:
 
@@ -18,7 +12,8 @@ $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
 $accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $params = [
-	'method' => 'contacts/list'
+	'method' => 'candidates/get',
+	'id' => 33
 ];
 
 $idibuAPIEndpoint .= '?' . http_build_query($params);
@@ -36,18 +31,18 @@ curl_close($ch);
 
 Restful call from Raw PHP:
 ```php
-$data = $WU_API->sendMessageToWU( 'contacts/list', [] );
+$data = $WU_API->sendMessageToWU( 'candidates/get', array( 'id' => '123' ) );
 var_export( $data );
 ```
 
 Restful call from JS API:
 ```php
-var data = wu.sendMessageToWU( 'contacts/list'. {phone: '+1 234-567-89'} );
+var data = wu.sendMessageToWU( 'candidates/get'. {id: 123} );
 console.log( data ); //output to firebug console
 ```
 
 Restful call from Interaction API
 ```php
-$data = \WU_API::apiCall( 'contacts/list', array( 'phone_mobile' => '+44 55 66 77 88' ) );
+$data = \WU_API::apiCall( 'candidates/get', array( 'id' => '123' ) );
 \WU_API::debug( $data ); //output to firebug console
 ```

@@ -1,4 +1,4 @@
-Projects/edit
+Vacancies/edit
 ===
 
 Parameters:
@@ -24,7 +24,7 @@ $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
 $accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $data = [
-'method' => 'projects/edit',
+'method' => 'vacancies/edit',
 'access_token' => $accessToken,
 'project_id' => 123, //idibu v3 vacancy id
 'status' => 'archived' //'active', 'placed' or 'archived'

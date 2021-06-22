@@ -1,10 +1,10 @@
-contacts/search
+candidates/search
 ===
 
-Searches an existent contact in idibu v3. The result format will be a json string
+Searches an existent candidates in idibu v3. The result format will be a json string
 email, phone_mobile, phone, limit, offset, comms_status
 Parameters:
- * `name` - search by contact name
+ * `name` - search by candidate name
  * `email` - search by email
  * `phone_mobile` - search by email
  * `phone` - search by email
@@ -18,7 +18,7 @@ $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
 $accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $data = [
-    'method' => 'contacts/search',
+    'method' => 'candidates/search',
     'access_token' => $accessToken,
     'name' => 'test'
 ];

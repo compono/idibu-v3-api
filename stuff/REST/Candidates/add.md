@@ -1,19 +1,19 @@
-contacts/add
+candidates/add
 ===
 
-Adds a contact to idibu.
+Adds a candidate to idibu.
 Please notice that it doesn't check for duplicates, we expect that if you're adding a candidate - then it's someone whom you don't have yet in you database.
 
 Parameters:
  * `status_id` - status id, default is 'New'
  * `project_id` - project id (required if want to set status id)
- * `data` - personal info of contact
+ * `data` - personal info of candidate
    * `name` - first and last name, required
    * `background_info` - background information
    * `email` - email address
-   * `location` - contact address
+   * `location` - candidate address
    * `history` - work history
-   * `education` - contact education
+   * `education` - candidate education
    * `facebook` - link to facebook
    * `twitter` - link to twitter
    * `linkedin` - link to linkedin profile
@@ -32,7 +32,7 @@ $idibuAPIEndpoint = 'https://v3.idibu.com/c/oauth/v1';
 $accessToken = 'xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx';
 
 $data = [
-    'method' => 'contacts/add',
+    'method' => 'candidates/add',
     'access_token' => $accessToken,
     'status_id' => 1,
     'project_id' => 123,
