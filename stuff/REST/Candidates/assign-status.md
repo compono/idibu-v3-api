@@ -16,7 +16,8 @@ You need to specify either `traffic_light` or `status_id`. Or you can specify th
 Examples:
 
 Restful call from Raw PHP:
-```
+```php
+<?php
 $data = $WU_API->sendMessageToWU('candidates/assign-status', [
     'id' => 49841,
     'vacancy_id' => 5007,
