@@ -2,6 +2,8 @@
 
 This is a work in progress article. Information provided here is subjected to change and is not yet finalised.
 
+IMPORTANT: Please note that our webhook system is two tier. This doc outlines the full data contained in our Advanced webhook which may be liable to additional client charges depending on the intended use. Please contact our Product Team to discuss this further before commiting to development plans.
+
 ## Overview
 
 This webhooks feeds data when a candidate profile is [created](http://v3-docs.idibu.com/article/289-uploading-candidates-article) or updated. You can use this webhook to:
