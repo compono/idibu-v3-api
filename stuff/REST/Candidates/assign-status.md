@@ -47,3 +47,13 @@ $data = $WU_API->sendMessageToWU('candidates/assign-status', [
 ]);
 var_export($data);
 ```
+
+Restful call using curl:
+```console
+    curl --location 'https://v3.idibu.com/c/oauth/v1' \
+    --header 'Authorization: Bearer {your_token}' \
+    --form 'vacancy_id="5007"' \
+    --form 'id="49843"' \
+    --form 'status_id="239"' \
+    --form 'method="candidates/assign-status"'
+```
