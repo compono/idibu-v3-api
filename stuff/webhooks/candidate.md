@@ -1,6 +1,6 @@
 ### Disclaimer
 
-This is a work-in-progress article. Information provided here is subject to change and is not yet finalised.
+This is a work-in-progress article. Information provided here is subject to change.
 
 ## Overview
 
@@ -8,8 +8,9 @@ This webhook feeds data when a candidate profile is [created](http://v3-docs.idi
 
 - synchronize candidates created in idibu with your system,
 - track any changes to their profiles,
-- collect candidates' created numbers, their data and which step of the recruitment process are they currently at; you can potentially break this information down by additional parameters like location, current position, and others,
-- collect candidate data for analysis purposes - i.e. track which location brought most placed candidates, what is your most successful source, etc.
+- collect candidate-created numbers, their data, and which step of the recruitment process they are currently at; you can potentially break this information down by additional parameters like location, current position, and others,
+- collect candidate data for analysis purposes,
+- obtain the candidate's CV/resume file to parse into your CRM system,
 - and others!
 
 ## Data
