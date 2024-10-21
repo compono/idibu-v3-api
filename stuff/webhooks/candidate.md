@@ -43,6 +43,9 @@ Every webhook call contains selected candidate fields that are present on the ca
   - `filename` - full name and filetype extension of the file
   - `file_link` - URL that allows to download the file directly
   - `type` - type of the file (e.g. `cv_doc`, `image`, `note`, `document`, etc.)
+- `custom_fields` - lists all the optional custom fields connected to the candidate
+  - `value` - field's value (e.g. candidate's response to a screening question or a note added by the consultant)
+  - `name` - name of the custom field
 - `payload-information`
   - `timestamp` - the exact timestamp of when the webhook was sent
   - `webhook_event` - either `candidate.create` or `candidate.update`
@@ -100,6 +103,21 @@ Content-Type: application/json
 				"filename": "Jess_Quincy_CV.docx",
 				"file_link": "https://v3.idibu.com/c/cloud/get-file/clientID/123/type/apptrack/file/oEYEdXIJ8rO5Cb8vBaGVqV0sI5Y6djzIDFx2TIsuquRUZUvFSBerrSbHa9MHyjstuU7exRO7OA9gi31z/id/67890",
 				"type": "cv_doc"
+			}
+		]
+	},
+	"custom_fields": [
+			{
+				"value": "Yes",
+				"name": "Current"
+			},
+			{
+				"value": "No",
+				"name": "Willing to relocate"
+			},
+			{
+				"value": "Unlikely",
+				"name": "Will he/she ask questions?"
 			}
 		]
 	},
