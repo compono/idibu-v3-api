@@ -91,14 +91,17 @@ https://v3.idibu.com/c/integration/[crm_name]?id=<ID>&secret=<SECRET>&vacancy=12
 
 ### “Nice to have” variables
 
-The following list are remaining variables you can utilise to improve the user experience:
+The following list the remaining variables you can utilise to improve the user experience:
 
 - `kws` = Search keywords (we will use the title if this is not supplied) - it’ll help us with auto-matching candidates to the vacancy, accepts Boolean
-- `duration` = Textual description of the duration of a contract position
+- `duration` = Textual d.escription of the duration of a contract position
 - `lpage` = Enable landing pages for this vacancy
 - `lpageid` = ID of the landing page to use with this vacancy
 
+### Important! Re-synching existing Vacancies
+Please keep in mind that if a Vacancy has already been posted out (i.e. a functional Advert was created), the above variables that you pass to the iframe will NOT update the parameters that have been previously set on the Vacancy.
 
+This is because we consider the data present in the idibu system to be the final source of truth. After syncing your Vacancy data into idibu, your users may update some of the Vacancy details there as part of the posting process. These updated details would then be lost if overridden by your system's data when re-opening the existing Vacancy in the iframe again - which is why we do not allow such a scenario currently.
 
 Next up: [Styling your integration](https://github.com/oneworldmarket/idibu-v3-api/blob/master/stuff/iFrame%20integration/Styling%20your%20integration.md)
 
