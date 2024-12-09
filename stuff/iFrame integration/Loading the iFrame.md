@@ -8,7 +8,7 @@ You will need to use a specific `endpoint_url` for your CRM integration. The for
 
 `[crm_name]` will be the name value we provide for your CRM. Please [contact us](https://www.idibu.com/contact-support/) to request this integration name value, quoting the text above.
 
-### IMPORTANT - Please use the HTTP POST method and not GET
+### IMPORTANT - Please use the HTTP POST method
 
 While we do support HTTP GET, we _strongly_ recommend to use POST.
 
