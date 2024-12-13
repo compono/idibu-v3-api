@@ -32,7 +32,6 @@ We will use this to work out if a new user needs to be created, or if we are wor
 
 The following variables **must** be passed for the integration to work:
 
-- Use the default "idibu" as your partner name which will load the default idibu styles. We will supply you with your own partner name when custom styling is required for your integration. 
 - `id` - your application ID created previously
 - `secret` - your application SECRET created previously
 - `vacancy` - unique identifier of your vacancy (will be used as external CRM entity ID)
