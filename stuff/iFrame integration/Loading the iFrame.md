@@ -96,6 +96,7 @@ Below are the remaining variables you can utilise to improve the user experience
 - `duration` - textual description of the duration of a contract or temporary position
 - `lpage` - enable landing pages for this vacancy
 - `lpageid` - ID of the landing page to use with this vacancy
+- `appurl` - external Application URL where candidates would be redirected instead of applying directly through idibu
 
 ### Important! Re-synching existing Vacancies
 Please keep in mind that if a Vacancy has already been posted out (i.e. a functional Advert was created), the above variables that you pass to the iframe will NOT update the parameters that have been previously set on the Vacancy.
